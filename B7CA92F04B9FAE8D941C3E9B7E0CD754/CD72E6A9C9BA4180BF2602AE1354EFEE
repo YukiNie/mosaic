@@ -1,0 +1,1221 @@
+---
+version: "1.1"
+metadataLocale: "en-US"
+dateNumberLocale: "en-US"
+model:
+- information:
+    primaryLocale: "en-US"
+    objectId: "CD72E6A9C9BA4180BF2602AE1354EFEE"
+    subType: "report_emma_cube"
+    name: "_US619655_3"
+    description: "Data model for managing multilingual country reference data, supporting country-level lookups and localization across multiple languages without metrics or transactional measures."
+  acl:
+    "0AB3BC27425A061AEFCEEF9868D5E69A":
+      granted: 0
+      denied: 255
+      inheritable: false
+    "294DEDC011D2F1D56000D98E67019608":
+      granted: 5
+      denied: 0
+      inheritable: false
+    "54F3D26011D2896560009A8E67019608":
+      granted: 255
+      denied: 0
+      inheritable: false
+    C1E1419F11D603A2100086B3A5E8F8A4:
+      granted: 255
+      denied: 0
+      inheritable: false
+    C82C6B1011D2894CC0009D9F29718E4F:
+      granted: 5
+      denied: 0
+      inheritable: false
+    CBFE036E7D4E49F584B0C8982927A485:
+      granted: 223
+      denied: 0
+      inheritable: false
+    D5ABCBF54937420EC3377FA23857A4DC:
+      granted: 255
+      denied: 0
+      inheritable: false
+    E03E047047FCB31F305280A55012FC4A:
+      granted: 223
+      denied: 0
+      inheritable: false
+  translations:
+    name:
+      targetName: "Object Name"
+      translationValues:
+        1033:
+          translation: "_US619655_3"
+    description:
+      targetName: "Object Description"
+      translationValues:
+        1033:
+          translation: "Data model for managing multilingual country reference data, supporting country-level lookups and localization across multiple languages without metrics or transactional measures."
+  dataServeMode: "in_memory"
+  enableWrangleRecommendations: true
+  enableAutoHierarchyRelationships: true
+  sampling:
+    type: "first"
+    rowCount: 1000
+  partition:
+    mode: "automatic"
+    number: 4
+  autoJoin: true
+  tables:
+  - information:
+      primaryLocale: "en-US"
+      objectId: "7A2799FBB25E404085A1F32527C21468"
+      subType: "logical_table"
+      name: "lu_country"
+    acl:
+      "294DEDC011D2F1D56000D98E67019608":
+        granted: 255
+        denied: 0
+        inheritable: false
+      C82C6B1011D2894CC0009D9F29718E4F:
+        granted: 255
+        denied: 0
+        inheritable: false
+      D5ABCBF54937420EC3377FA23857A4DC:
+        granted: 255
+        denied: 0
+        inheritable: false
+    translations:
+      name:
+        targetName: "Object Name"
+        translationValues:
+          1033:
+            translation: "lu_country"
+    physicalTable:
+      information:
+        primaryLocale: "en-US"
+        objectId: "3009A16C4A294FC8BA5A0571A2C2D3E7"
+        subType: "physical_table"
+        name: "New DB Table"
+      columns:
+      - information:
+          primaryLocale: "en-US"
+          objectId: "6F30B6F102EA4BB18BAB474C08EC8EFE"
+          subType: "column"
+          name: "country_id"
+        dataType:
+          type: "integer"
+          precision: 2
+          scale: 0
+        columnName: "country_id"
+      - information:
+          primaryLocale: "en-US"
+          objectId: "B5C7E3B38FB042AEAA6ED320E8FB6EC3"
+          subType: "column"
+          name: "country_name"
+        dataType:
+          type: "utf8_char"
+          precision: 50
+          scale: 0
+        columnName: "country_name"
+      - information:
+          primaryLocale: "en-US"
+          objectId: "8E5F7625185642188742137FCBA032F1"
+          subType: "column"
+          name: "country_name_de"
+        dataType:
+          type: "utf8_char"
+          precision: 50
+          scale: 0
+        columnName: "country_name_de"
+      - information:
+          primaryLocale: "en-US"
+          objectId: "CFC69331631E417CBEA036D469643DBF"
+          subType: "column"
+          name: "country_name_fr"
+        dataType:
+          type: "utf8_char"
+          precision: 50
+          scale: 0
+        columnName: "country_name_fr"
+      - information:
+          primaryLocale: "en-US"
+          objectId: "EDF0C10866204B81A171C3688D256F63"
+          subType: "column"
+          name: "country_name_es"
+        dataType:
+          type: "utf8_char"
+          precision: 50
+          scale: 0
+        columnName: "country_name_es"
+      - information:
+          primaryLocale: "en-US"
+          objectId: "71606756C4BA425D85E920B8F7947E65"
+          subType: "column"
+          name: "country_name_it"
+        dataType:
+          type: "utf8_char"
+          precision: 50
+          scale: 0
+        columnName: "country_name_it"
+      - information:
+          primaryLocale: "en-US"
+          objectId: "304B067F3C6A4E7E832912194C07F17D"
+          subType: "column"
+          name: "country_name_po"
+        dataType:
+          type: "utf8_char"
+          precision: 50
+          scale: 0
+        columnName: "country_name_po"
+      - information:
+          primaryLocale: "en-US"
+          objectId: "66EFFB943C9547F49BB8C96115DD100A"
+          subType: "column"
+          name: "country_name_ja"
+        dataType:
+          type: "utf8_char"
+          precision: 50
+          scale: 0
+        columnName: "country_name_ja"
+      - information:
+          primaryLocale: "en-US"
+          objectId: "708E3F93357247B78401F9CABF97EE3A"
+          subType: "column"
+          name: "country_name_sch"
+        dataType:
+          type: "utf8_char"
+          precision: 50
+          scale: 0
+        columnName: "country_name_sch"
+      - information:
+          primaryLocale: "en-US"
+          objectId: "DB85FD43DD2947C387E93DBA93773DC2"
+          subType: "column"
+          name: "country_name_ko"
+        dataType:
+          type: "utf8_char"
+          precision: 50
+          scale: 0
+        columnName: "country_name_ko"
+      type: "pipeline"
+      pipeline:
+        id: "7A367FC9F09E4878A5DECA19FAC21560"
+        rootTable:
+          id: "10448C11A48D403AAAAF0D15F6AA45DC"
+          type: "root"
+          children:
+          - id: "E7B3DA710B474DC5B5CDB923B42F60E8"
+            name: "lu_country"
+            type: "source"
+            columns:
+            - id: "ADB0215DC0B140C2887678955331E06F"
+              name: "country_id"
+              dataType:
+                type: "integer"
+                precision: 2
+                scale: 0
+              sourceDataType:
+                type: "integer"
+                precision: 2
+                scale: 0
+              sparkDataType:
+                type: "integer"
+            - id: "DE4A602EE2ED47ADAC2F1E18191029B9"
+              name: "country_name"
+              dataType:
+                type: "utf8_char"
+                precision: 50
+                scale: 0
+              sourceDataType:
+                type: "utf8_char"
+                precision: 50
+                scale: 0
+              sparkDataType:
+                type: "string"
+            - id: "C9359E1BDA724AD6B02CD620AE8037BA"
+              name: "country_name_de"
+              dataType:
+                type: "utf8_char"
+                precision: 50
+                scale: 0
+              sourceDataType:
+                type: "utf8_char"
+                precision: 50
+                scale: 0
+              sparkDataType:
+                type: "string"
+            - id: "CD8B4BB115D44C32A5CD56D0A1784F30"
+              name: "country_name_fr"
+              dataType:
+                type: "utf8_char"
+                precision: 50
+                scale: 0
+              sourceDataType:
+                type: "utf8_char"
+                precision: 50
+                scale: 0
+              sparkDataType:
+                type: "string"
+            - id: "6A6DD1F38B9347D194DC723DC1A8299C"
+              name: "country_name_es"
+              dataType:
+                type: "utf8_char"
+                precision: 50
+                scale: 0
+              sourceDataType:
+                type: "utf8_char"
+                precision: 50
+                scale: 0
+              sparkDataType:
+                type: "string"
+            - id: "7DEB504302934AE6AEE58A11D74BC864"
+              name: "country_name_it"
+              dataType:
+                type: "utf8_char"
+                precision: 50
+                scale: 0
+              sourceDataType:
+                type: "utf8_char"
+                precision: 50
+                scale: 0
+              sparkDataType:
+                type: "string"
+            - id: "4ECB0BBA75F642EFB85F3A6C22F2CEF3"
+              name: "country_name_po"
+              dataType:
+                type: "utf8_char"
+                precision: 50
+                scale: 0
+              sourceDataType:
+                type: "utf8_char"
+                precision: 50
+                scale: 0
+              sparkDataType:
+                type: "string"
+            - id: "9CFDD6640E2F4F49BA2D82DC94932FF6"
+              name: "country_name_ja"
+              dataType:
+                type: "utf8_char"
+                precision: 50
+                scale: 0
+              sourceDataType:
+                type: "utf8_char"
+                precision: 50
+                scale: 0
+              sparkDataType:
+                type: "string"
+            - id: "259CDD016E354FCB83A2180FC029FDBA"
+              name: "country_name_sch"
+              dataType:
+                type: "utf8_char"
+                precision: 50
+                scale: 0
+              sourceDataType:
+                type: "utf8_char"
+                precision: 50
+                scale: 0
+              sparkDataType:
+                type: "string"
+            - id: "4F4CB674F349430AA95B65588E12A490"
+              name: "country_name_ko"
+              dataType:
+                type: "utf8_char"
+                precision: 50
+                scale: 0
+              sourceDataType:
+                type: "utf8_char"
+                precision: 50
+                scale: 0
+              sparkDataType:
+                type: "string"
+            importSource:
+              type: "single_table"
+              dataSourceId: "E93B0C144F9EAF781E3993B5C439220D"
+              namespace: "public"
+              tableName: "lu_country"
+              sql: ""
+    attributes:
+    - information:
+        objectId: "C89C52C66B2F47A79C60712E9774035D"
+        subType: "attribute"
+        name: "Country Name German"
+    - information:
+        objectId: "8AF3F79C93F84F49A49230629BCEB05C"
+        subType: "attribute"
+        name: "Country Name French"
+    - information:
+        objectId: "76CB1949E61F4C96A249674CE4D88E5F"
+        subType: "attribute"
+        name: "Country Name Italian"
+    - information:
+        objectId: "B95A6ABD65514218A01242D8DB7B0B4A"
+        subType: "attribute"
+        name: "Country Name Portuguese"
+    - information:
+        objectId: "E2BD2417DA65424EAA056CF39229D949"
+        subType: "attribute"
+        name: "Country Name Japanese"
+    - information:
+        objectId: "1668507CE660429F994FC91B4D5B68E1"
+        subType: "attribute"
+        name: "Country Name Chinese Simplified"
+    - information:
+        objectId: "7154F9E7AF1C4079A20D931AA45509A1"
+        subType: "attribute"
+        name: "Country Name Korean"
+    - information:
+        objectId: "A28656225F3C450C9BA51D63B922AB19"
+        subType: "attribute"
+        name: "Country Name"
+    - information:
+        objectId: "EC834597E7A3498087D45CAA7C6FF753"
+        subType: "attribute"
+        name: "Country Name English"
+    factMetrics:
+    - information:
+        objectId: "5F0E0534CFA94847A8D807F3CDF585B5"
+        subType: "fact_metric"
+        name: "Country Name Spanish"
+    refreshPolicy: "replace"
+  attributes:
+  - information:
+      primaryLocale: "en-US"
+      objectId: "A28656225F3C450C9BA51D63B922AB19"
+      subType: "attribute"
+      name: "Country Name"
+      description: "Surrogate numeric identifier for each country or region record in the lookup table."
+    forms:
+    - id: "45C11FA478E745FEA08D781CEA190FE5"
+      name: "Country ID"
+      description: "Surrogate numeric identifier for each country or region record in the lookup table."
+      category: "ID"
+      type: "system"
+      displayFormat: "number"
+      dataType:
+        type: "integer"
+        precision: 2
+        scale: 0
+      expressions:
+      - expression:
+          text: "country_id"
+        tables:
+        - objectId: "7A2799FBB25E404085A1F32527C21468"
+          subType: "logical_table"
+          name: "lu_country"
+      alias: "country_id"
+      lookupTable:
+        objectId: "7A2799FBB25E404085A1F32527C21468"
+        subType: "logical_table"
+        name: "lu_country"
+    attributeLookupTable:
+      objectId: "7A2799FBB25E404085A1F32527C21468"
+      subType: "logical_table"
+      name: "lu_country"
+    keyForm:
+      id: "45C11FA478E745FEA08D781CEA190FE5"
+      name: "Country ID"
+    displays:
+      reportDisplays:
+      - id: "45C11FA478E745FEA08D781CEA190FE5"
+        name: "Country ID"
+      browseDisplays:
+      - id: "45C11FA478E745FEA08D781CEA190FE5"
+        name: "Country ID"
+    sorts: {}
+    nonAggregatable: false
+    acl:
+      "294DEDC011D2F1D56000D98E67019608":
+        granted: 255
+        denied: 0
+        inheritable: false
+      C82C6B1011D2894CC0009D9F29718E4F:
+        granted: 255
+        denied: 0
+        inheritable: false
+      D5ABCBF54937420EC3377FA23857A4DC:
+        granted: 255
+        denied: 0
+        inheritable: false
+    translations:
+      name:
+        targetName: "Object Name"
+        translationValues:
+          1033:
+            translation: "Country Name"
+      description:
+        targetName: "Object Description"
+        translationValues:
+          1033:
+            translation: "Surrogate numeric identifier for each country or region record in the lookup table."
+      forms:
+        "45C11FA478E745FEA08D781CEA190FE5":
+          name:
+            targetName: "Attribute Form Name"
+            translationValues:
+              1033:
+                translation: "Country ID"
+          description:
+            targetName: "Attribute Form Description"
+            translationValues:
+              1033:
+                translation: "Surrogate numeric identifier for each country or region record in the lookup table."
+    autoDetectLookupTable: true
+  - information:
+      primaryLocale: "en-US"
+      objectId: "C89C52C66B2F47A79C60712E9774035D"
+      subType: "attribute"
+      name: "Country Name German"
+      description: "Country or region name translated into German for localized user interfaces and reports."
+    forms:
+    - id: "45C11FA478E745FEA08D781CEA190FE5"
+      name: "Country Name German"
+      description: "Country or region name translated into German for localized user interfaces and reports."
+      category: "ID"
+      type: "system"
+      geographicalRole: "country"
+      displayFormat: "text"
+      dataType:
+        type: "utf8_char"
+        precision: 50
+        scale: 0
+      expressions:
+      - expression:
+          text: "country_name_de"
+        tables:
+        - objectId: "7A2799FBB25E404085A1F32527C21468"
+          subType: "logical_table"
+          name: "lu_country"
+      alias: "country_name_de"
+      lookupTable:
+        objectId: "7A2799FBB25E404085A1F32527C21468"
+        subType: "logical_table"
+        name: "lu_country"
+      semanticRole: "geo"
+    attributeLookupTable:
+      objectId: "7A2799FBB25E404085A1F32527C21468"
+      subType: "logical_table"
+      name: "lu_country"
+    keyForm:
+      id: "45C11FA478E745FEA08D781CEA190FE5"
+      name: "Country Name German"
+    displays:
+      reportDisplays:
+      - id: "45C11FA478E745FEA08D781CEA190FE5"
+        name: "Country Name German"
+      browseDisplays:
+      - id: "45C11FA478E745FEA08D781CEA190FE5"
+        name: "Country Name German"
+    sorts: {}
+    nonAggregatable: false
+    acl:
+      "294DEDC011D2F1D56000D98E67019608":
+        granted: 255
+        denied: 0
+        inheritable: false
+      C82C6B1011D2894CC0009D9F29718E4F:
+        granted: 255
+        denied: 0
+        inheritable: false
+      D5ABCBF54937420EC3377FA23857A4DC:
+        granted: 255
+        denied: 0
+        inheritable: false
+    translations:
+      name:
+        targetName: "Object Name"
+        translationValues:
+          1033:
+            translation: "Country Name German"
+      description:
+        targetName: "Object Description"
+        translationValues:
+          1033:
+            translation: "Country or region name translated into German for localized user interfaces and reports."
+      forms:
+        "45C11FA478E745FEA08D781CEA190FE5":
+          name:
+            targetName: "Attribute Form Name"
+            translationValues:
+              1033:
+                translation: "Country Name German"
+          description:
+            targetName: "Attribute Form Description"
+            translationValues:
+              1033:
+                translation: "Country or region name translated into German for localized user interfaces and reports."
+    autoDetectLookupTable: true
+  - information:
+      primaryLocale: "en-US"
+      objectId: "8AF3F79C93F84F49A49230629BCEB05C"
+      subType: "attribute"
+      name: "Country Name French"
+      description: "Country or region name translated into French for localized user interfaces and reports."
+    forms:
+    - id: "45C11FA478E745FEA08D781CEA190FE5"
+      name: "Country Name French"
+      description: "Country or region name translated into French for localized user interfaces and reports."
+      category: "ID"
+      type: "system"
+      geographicalRole: "country"
+      displayFormat: "text"
+      dataType:
+        type: "utf8_char"
+        precision: 50
+        scale: 0
+      expressions:
+      - expression:
+          text: "country_name_fr"
+        tables:
+        - objectId: "7A2799FBB25E404085A1F32527C21468"
+          subType: "logical_table"
+          name: "lu_country"
+      alias: "country_name_fr"
+      lookupTable:
+        objectId: "7A2799FBB25E404085A1F32527C21468"
+        subType: "logical_table"
+        name: "lu_country"
+      semanticRole: "geo"
+    attributeLookupTable:
+      objectId: "7A2799FBB25E404085A1F32527C21468"
+      subType: "logical_table"
+      name: "lu_country"
+    keyForm:
+      id: "45C11FA478E745FEA08D781CEA190FE5"
+      name: "Country Name French"
+    displays:
+      reportDisplays:
+      - id: "45C11FA478E745FEA08D781CEA190FE5"
+        name: "Country Name French"
+      browseDisplays:
+      - id: "45C11FA478E745FEA08D781CEA190FE5"
+        name: "Country Name French"
+    sorts: {}
+    nonAggregatable: false
+    acl:
+      "294DEDC011D2F1D56000D98E67019608":
+        granted: 255
+        denied: 0
+        inheritable: false
+      C82C6B1011D2894CC0009D9F29718E4F:
+        granted: 255
+        denied: 0
+        inheritable: false
+      D5ABCBF54937420EC3377FA23857A4DC:
+        granted: 255
+        denied: 0
+        inheritable: false
+    translations:
+      name:
+        targetName: "Object Name"
+        translationValues:
+          1033:
+            translation: "Country Name French"
+      description:
+        targetName: "Object Description"
+        translationValues:
+          1033:
+            translation: "Country or region name translated into French for localized user interfaces and reports."
+      forms:
+        "45C11FA478E745FEA08D781CEA190FE5":
+          name:
+            targetName: "Attribute Form Name"
+            translationValues:
+              1033:
+                translation: "Country Name French"
+          description:
+            targetName: "Attribute Form Description"
+            translationValues:
+              1033:
+                translation: "Country or region name translated into French for localized user interfaces and reports."
+    autoDetectLookupTable: true
+  - information:
+      primaryLocale: "en-US"
+      objectId: "76CB1949E61F4C96A249674CE4D88E5F"
+      subType: "attribute"
+      name: "Country Name Italian"
+      description: "Country or region name translated into Italian for localized user interfaces and reports."
+    forms:
+    - id: "45C11FA478E745FEA08D781CEA190FE5"
+      name: "Country Name Italian"
+      description: "Country or region name translated into Italian for localized user interfaces and reports."
+      category: "ID"
+      type: "system"
+      geographicalRole: "country"
+      displayFormat: "text"
+      dataType:
+        type: "utf8_char"
+        precision: 50
+        scale: 0
+      expressions:
+      - expression:
+          text: "country_name_it"
+        tables:
+        - objectId: "7A2799FBB25E404085A1F32527C21468"
+          subType: "logical_table"
+          name: "lu_country"
+      alias: "country_name_it"
+      lookupTable:
+        objectId: "7A2799FBB25E404085A1F32527C21468"
+        subType: "logical_table"
+        name: "lu_country"
+      semanticRole: "geo"
+    attributeLookupTable:
+      objectId: "7A2799FBB25E404085A1F32527C21468"
+      subType: "logical_table"
+      name: "lu_country"
+    keyForm:
+      id: "45C11FA478E745FEA08D781CEA190FE5"
+      name: "Country Name Italian"
+    displays:
+      reportDisplays:
+      - id: "45C11FA478E745FEA08D781CEA190FE5"
+        name: "Country Name Italian"
+      browseDisplays:
+      - id: "45C11FA478E745FEA08D781CEA190FE5"
+        name: "Country Name Italian"
+    sorts: {}
+    nonAggregatable: false
+    acl:
+      "294DEDC011D2F1D56000D98E67019608":
+        granted: 255
+        denied: 0
+        inheritable: false
+      C82C6B1011D2894CC0009D9F29718E4F:
+        granted: 255
+        denied: 0
+        inheritable: false
+      D5ABCBF54937420EC3377FA23857A4DC:
+        granted: 255
+        denied: 0
+        inheritable: false
+    translations:
+      name:
+        targetName: "Object Name"
+        translationValues:
+          1033:
+            translation: "Country Name Italian"
+      description:
+        targetName: "Object Description"
+        translationValues:
+          1033:
+            translation: "Country or region name translated into Italian for localized user interfaces and reports."
+      forms:
+        "45C11FA478E745FEA08D781CEA190FE5":
+          name:
+            targetName: "Attribute Form Name"
+            translationValues:
+              1033:
+                translation: "Country Name Italian"
+          description:
+            targetName: "Attribute Form Description"
+            translationValues:
+              1033:
+                translation: "Country or region name translated into Italian for localized user interfaces and reports."
+    autoDetectLookupTable: true
+  - information:
+      primaryLocale: "en-US"
+      objectId: "B95A6ABD65514218A01242D8DB7B0B4A"
+      subType: "attribute"
+      name: "Country Name Portuguese"
+      description: "Country or region name translated into Portuguese for localized user interfaces and reports."
+    forms:
+    - id: "45C11FA478E745FEA08D781CEA190FE5"
+      name: "Country Name Portuguese"
+      description: "Country or region name translated into Portuguese for localized user interfaces and reports."
+      category: "ID"
+      type: "system"
+      geographicalRole: "country"
+      displayFormat: "text"
+      dataType:
+        type: "utf8_char"
+        precision: 50
+        scale: 0
+      expressions:
+      - expression:
+          text: "country_name_po"
+        tables:
+        - objectId: "7A2799FBB25E404085A1F32527C21468"
+          subType: "logical_table"
+          name: "lu_country"
+      alias: "country_name_po"
+      lookupTable:
+        objectId: "7A2799FBB25E404085A1F32527C21468"
+        subType: "logical_table"
+        name: "lu_country"
+      semanticRole: "geo"
+    attributeLookupTable:
+      objectId: "7A2799FBB25E404085A1F32527C21468"
+      subType: "logical_table"
+      name: "lu_country"
+    keyForm:
+      id: "45C11FA478E745FEA08D781CEA190FE5"
+      name: "Country Name Portuguese"
+    displays:
+      reportDisplays:
+      - id: "45C11FA478E745FEA08D781CEA190FE5"
+        name: "Country Name Portuguese"
+      browseDisplays:
+      - id: "45C11FA478E745FEA08D781CEA190FE5"
+        name: "Country Name Portuguese"
+    sorts: {}
+    nonAggregatable: false
+    acl:
+      "294DEDC011D2F1D56000D98E67019608":
+        granted: 255
+        denied: 0
+        inheritable: false
+      C82C6B1011D2894CC0009D9F29718E4F:
+        granted: 255
+        denied: 0
+        inheritable: false
+      D5ABCBF54937420EC3377FA23857A4DC:
+        granted: 255
+        denied: 0
+        inheritable: false
+    translations:
+      name:
+        targetName: "Object Name"
+        translationValues:
+          1033:
+            translation: "Country Name Portuguese"
+      description:
+        targetName: "Object Description"
+        translationValues:
+          1033:
+            translation: "Country or region name translated into Portuguese for localized user interfaces and reports."
+      forms:
+        "45C11FA478E745FEA08D781CEA190FE5":
+          name:
+            targetName: "Attribute Form Name"
+            translationValues:
+              1033:
+                translation: "Country Name Portuguese"
+          description:
+            targetName: "Attribute Form Description"
+            translationValues:
+              1033:
+                translation: "Country or region name translated into Portuguese for localized user interfaces and reports."
+    autoDetectLookupTable: true
+  - information:
+      primaryLocale: "en-US"
+      objectId: "E2BD2417DA65424EAA056CF39229D949"
+      subType: "attribute"
+      name: "Country Name Japanese"
+      description: "Country or region name translated into Japanese for localized user interfaces and reports."
+    forms:
+    - id: "45C11FA478E745FEA08D781CEA190FE5"
+      name: "Country Name Japanese"
+      description: "Country or region name translated into Japanese for localized user interfaces and reports."
+      category: "ID"
+      type: "system"
+      geographicalRole: "country"
+      displayFormat: "text"
+      dataType:
+        type: "utf8_char"
+        precision: 50
+        scale: 0
+      expressions:
+      - expression:
+          text: "country_name_ja"
+        tables:
+        - objectId: "7A2799FBB25E404085A1F32527C21468"
+          subType: "logical_table"
+          name: "lu_country"
+      alias: "country_name_ja"
+      lookupTable:
+        objectId: "7A2799FBB25E404085A1F32527C21468"
+        subType: "logical_table"
+        name: "lu_country"
+      semanticRole: "geo"
+    attributeLookupTable:
+      objectId: "7A2799FBB25E404085A1F32527C21468"
+      subType: "logical_table"
+      name: "lu_country"
+    keyForm:
+      id: "45C11FA478E745FEA08D781CEA190FE5"
+      name: "Country Name Japanese"
+    displays:
+      reportDisplays:
+      - id: "45C11FA478E745FEA08D781CEA190FE5"
+        name: "Country Name Japanese"
+      browseDisplays:
+      - id: "45C11FA478E745FEA08D781CEA190FE5"
+        name: "Country Name Japanese"
+    sorts: {}
+    nonAggregatable: false
+    acl:
+      "294DEDC011D2F1D56000D98E67019608":
+        granted: 255
+        denied: 0
+        inheritable: false
+      C82C6B1011D2894CC0009D9F29718E4F:
+        granted: 255
+        denied: 0
+        inheritable: false
+      D5ABCBF54937420EC3377FA23857A4DC:
+        granted: 255
+        denied: 0
+        inheritable: false
+    translations:
+      name:
+        targetName: "Object Name"
+        translationValues:
+          1033:
+            translation: "Country Name Japanese"
+      description:
+        targetName: "Object Description"
+        translationValues:
+          1033:
+            translation: "Country or region name translated into Japanese for localized user interfaces and reports."
+      forms:
+        "45C11FA478E745FEA08D781CEA190FE5":
+          name:
+            targetName: "Attribute Form Name"
+            translationValues:
+              1033:
+                translation: "Country Name Japanese"
+          description:
+            targetName: "Attribute Form Description"
+            translationValues:
+              1033:
+                translation: "Country or region name translated into Japanese for localized user interfaces and reports."
+    autoDetectLookupTable: true
+  - information:
+      primaryLocale: "en-US"
+      objectId: "1668507CE660429F994FC91B4D5B68E1"
+      subType: "attribute"
+      name: "Country Name Chinese Simplified"
+      description: "Country or region name translated into Simplified Chinese for localized user interfaces and reports."
+    forms:
+    - id: "45C11FA478E745FEA08D781CEA190FE5"
+      name: "Country Name Chinese Simplified"
+      description: "Country or region name translated into Simplified Chinese for localized user interfaces and reports."
+      category: "ID"
+      type: "system"
+      geographicalRole: "country"
+      displayFormat: "text"
+      dataType:
+        type: "utf8_char"
+        precision: 50
+        scale: 0
+      expressions:
+      - expression:
+          text: "country_name_sch"
+        tables:
+        - objectId: "7A2799FBB25E404085A1F32527C21468"
+          subType: "logical_table"
+          name: "lu_country"
+      alias: "country_name_sch"
+      lookupTable:
+        objectId: "7A2799FBB25E404085A1F32527C21468"
+        subType: "logical_table"
+        name: "lu_country"
+      semanticRole: "geo"
+    attributeLookupTable:
+      objectId: "7A2799FBB25E404085A1F32527C21468"
+      subType: "logical_table"
+      name: "lu_country"
+    keyForm:
+      id: "45C11FA478E745FEA08D781CEA190FE5"
+      name: "Country Name Chinese Simplified"
+    displays:
+      reportDisplays:
+      - id: "45C11FA478E745FEA08D781CEA190FE5"
+        name: "Country Name Chinese Simplified"
+      browseDisplays:
+      - id: "45C11FA478E745FEA08D781CEA190FE5"
+        name: "Country Name Chinese Simplified"
+    sorts: {}
+    nonAggregatable: false
+    acl:
+      "294DEDC011D2F1D56000D98E67019608":
+        granted: 255
+        denied: 0
+        inheritable: false
+      C82C6B1011D2894CC0009D9F29718E4F:
+        granted: 255
+        denied: 0
+        inheritable: false
+      D5ABCBF54937420EC3377FA23857A4DC:
+        granted: 255
+        denied: 0
+        inheritable: false
+    translations:
+      name:
+        targetName: "Object Name"
+        translationValues:
+          1033:
+            translation: "Country Name Chinese Simplified"
+      description:
+        targetName: "Object Description"
+        translationValues:
+          1033:
+            translation: "Country or region name translated into Simplified Chinese for localized user interfaces and reports."
+      forms:
+        "45C11FA478E745FEA08D781CEA190FE5":
+          name:
+            targetName: "Attribute Form Name"
+            translationValues:
+              1033:
+                translation: "Country Name Chinese Simplified"
+          description:
+            targetName: "Attribute Form Description"
+            translationValues:
+              1033:
+                translation: "Country or region name translated into Simplified Chinese for localized user interfaces and reports."
+    autoDetectLookupTable: true
+  - information:
+      primaryLocale: "en-US"
+      objectId: "7154F9E7AF1C4079A20D931AA45509A1"
+      subType: "attribute"
+      name: "Country Name Korean"
+      description: "Country or region name translated into Korean for localized user interfaces and reports."
+    forms:
+    - id: "45C11FA478E745FEA08D781CEA190FE5"
+      name: "Country Name Korean"
+      description: "Country or region name translated into Korean for localized user interfaces and reports."
+      category: "ID"
+      type: "system"
+      geographicalRole: "country"
+      displayFormat: "text"
+      dataType:
+        type: "utf8_char"
+        precision: 50
+        scale: 0
+      expressions:
+      - expression:
+          text: "country_name_ko"
+        tables:
+        - objectId: "7A2799FBB25E404085A1F32527C21468"
+          subType: "logical_table"
+          name: "lu_country"
+      alias: "country_name_ko"
+      lookupTable:
+        objectId: "7A2799FBB25E404085A1F32527C21468"
+        subType: "logical_table"
+        name: "lu_country"
+      semanticRole: "geo"
+    attributeLookupTable:
+      objectId: "7A2799FBB25E404085A1F32527C21468"
+      subType: "logical_table"
+      name: "lu_country"
+    keyForm:
+      id: "45C11FA478E745FEA08D781CEA190FE5"
+      name: "Country Name Korean"
+    displays:
+      reportDisplays:
+      - id: "45C11FA478E745FEA08D781CEA190FE5"
+        name: "Country Name Korean"
+      browseDisplays:
+      - id: "45C11FA478E745FEA08D781CEA190FE5"
+        name: "Country Name Korean"
+    sorts: {}
+    nonAggregatable: false
+    acl:
+      "294DEDC011D2F1D56000D98E67019608":
+        granted: 255
+        denied: 0
+        inheritable: false
+      C82C6B1011D2894CC0009D9F29718E4F:
+        granted: 255
+        denied: 0
+        inheritable: false
+      D5ABCBF54937420EC3377FA23857A4DC:
+        granted: 255
+        denied: 0
+        inheritable: false
+    translations:
+      name:
+        targetName: "Object Name"
+        translationValues:
+          1033:
+            translation: "Country Name Korean"
+      description:
+        targetName: "Object Description"
+        translationValues:
+          1033:
+            translation: "Country or region name translated into Korean for localized user interfaces and reports."
+      forms:
+        "45C11FA478E745FEA08D781CEA190FE5":
+          name:
+            targetName: "Attribute Form Name"
+            translationValues:
+              1033:
+                translation: "Country Name Korean"
+          description:
+            targetName: "Attribute Form Description"
+            translationValues:
+              1033:
+                translation: "Country or region name translated into Korean for localized user interfaces and reports."
+    autoDetectLookupTable: true
+  - information:
+      primaryLocale: "en-US"
+      objectId: "EC834597E7A3498087D45CAA7C6FF753"
+      subType: "attribute"
+      name: "Country Name English"
+    forms:
+    - id: "45C11FA478E745FEA08D781CEA190FE5"
+      name: "Country Name English"
+      description: "Primary country or region name in the default system language for display and reporting."
+      category: "ID"
+      type: "system"
+      geographicalRole: "country"
+      displayFormat: "text"
+      dataType:
+        type: "utf8_char"
+        precision: 50
+        scale: 0
+      expressions:
+      - expression:
+          text: "country_name"
+        tables:
+        - objectId: "7A2799FBB25E404085A1F32527C21468"
+          subType: "logical_table"
+          name: "lu_country"
+      alias: "country_name"
+      lookupTable:
+        objectId: "7A2799FBB25E404085A1F32527C21468"
+        subType: "logical_table"
+        name: "lu_country"
+      semanticRole: "geo"
+    attributeLookupTable:
+      objectId: "7A2799FBB25E404085A1F32527C21468"
+      subType: "logical_table"
+      name: "lu_country"
+    keyForm:
+      id: "45C11FA478E745FEA08D781CEA190FE5"
+      name: "Country Name English"
+    displays:
+      reportDisplays:
+      - id: "45C11FA478E745FEA08D781CEA190FE5"
+        name: "Country Name English"
+      browseDisplays:
+      - id: "45C11FA478E745FEA08D781CEA190FE5"
+        name: "Country Name English"
+    sorts: {}
+    nonAggregatable: false
+    acl:
+      "294DEDC011D2F1D56000D98E67019608":
+        granted: 255
+        denied: 0
+        inheritable: false
+      B132F2DE154C98C8CE48F6B8202ED712:
+        granted: 255
+        denied: 0
+        inheritable: false
+      C82C6B1011D2894CC0009D9F29718E4F:
+        granted: 255
+        denied: 0
+        inheritable: false
+    translations:
+      name:
+        targetName: "Object Name"
+        translationValues:
+          1033:
+            translation: "Country Name English"
+      forms:
+        "45C11FA478E745FEA08D781CEA190FE5":
+          name:
+            targetName: "Attribute Form Name"
+            translationValues:
+              1033:
+                translation: "Country Name English"
+          description:
+            targetName: "Attribute Form Description"
+            translationValues:
+              1033:
+                translation: "Primary country or region name in the default system language for display and reporting."
+    autoDetectLookupTable: true
+  factMetrics:
+  - information:
+      primaryLocale: "en-US"
+      objectId: "5F0E0534CFA94847A8D807F3CDF585B5"
+      subType: "fact_metric"
+      name: "Country Name Spanish"
+    acl:
+      "294DEDC011D2F1D56000D98E67019608":
+        granted: 255
+        denied: 0
+        inheritable: false
+      C82C6B1011D2894CC0009D9F29718E4F:
+        granted: 255
+        denied: 0
+        inheritable: false
+      D5ABCBF54937420EC3377FA23857A4DC:
+        granted: 255
+        denied: 0
+        inheritable: false
+    translations:
+      name:
+        targetName: "Object Name"
+        translationValues:
+          1033:
+            translation: "Country Name Spanish"
+    fact:
+      dataType:
+        type: "utf8_char"
+        precision: 50
+        scale: 0
+      expressions:
+      - expression:
+          text: "country_name_es"
+        tables:
+        - objectId: "7A2799FBB25E404085A1F32527C21468"
+          subType: "logical_table"
+          name: "lu_country"
+    function: "max"
+    functionProperties:
+    - name: "UseLookupForAttributes"
+      value:
+        type: "boolean"
+        value: "false"
+    - name: "NullInclude"
+      value:
+        type: "int32"
+        value: "0"
+    dimty:
+      dimtyUnits:
+      - dimtyUnitType: "report_base_level"
+        aggregation: "normal"
+        filtering: "apply"
+        groupBy: true
+      excludeAttribute: false
+      allowAddingUnit: true
+    format:
+      header: []
+      values:
+      - type: "number_category"
+        value: "0"
+      - type: "number_decimal_places"
+        value: "0"
+      - type: "number_format"
+        value: "#,##0;(#,##0)"
+  hierarchy:
+    relationships: []
+    isolatedAttributes:
+    - objectId: "A28656225F3C450C9BA51D63B922AB19"
+      subType: "attribute"
+      name: "Country Name"
+    - objectId: "1668507CE660429F994FC91B4D5B68E1"
+      subType: "attribute"
+      name: "Country Name Chinese Simplified"
+    - objectId: "EC834597E7A3498087D45CAA7C6FF753"
+      subType: "attribute"
+      name: "Country Name English"
+    - objectId: "8AF3F79C93F84F49A49230629BCEB05C"
+      subType: "attribute"
+      name: "Country Name French"
+    - objectId: "C89C52C66B2F47A79C60712E9774035D"
+      subType: "attribute"
+      name: "Country Name German"
+    - objectId: "76CB1949E61F4C96A249674CE4D88E5F"
+      subType: "attribute"
+      name: "Country Name Italian"
+    - objectId: "E2BD2417DA65424EAA056CF39229D949"
+      subType: "attribute"
+      name: "Country Name Japanese"
+    - objectId: "7154F9E7AF1C4079A20D931AA45509A1"
+      subType: "attribute"
+      name: "Country Name Korean"
+    - objectId: "B95A6ABD65514218A01242D8DB7B0B4A"
+      subType: "attribute"
+      name: "Country Name Portuguese"
+fingerprint: "db25fe4185724d22793356b0d0beb27aa04396f4e31970da07bf75632c8b395c"
